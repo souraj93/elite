@@ -17,7 +17,7 @@
   <link rel="dns-prefetch" href="//fonts.googleapis.com" />
   
   <script type="text/javascript">
-    window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "https:\/\/newhome.qodeinteractive.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.3.1" } };
+    window._wpemojiSettings = { "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/", "ext": ".png", "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/", "svgExt": ".svg", "source": { "concatemoji": "..\/js\/emoji.js" } };
     /*! This file is auto-generated */
     !function (i, n) { var o, s, e; function c(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function p(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data), r = (e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0), new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data)); return t.every(function (e, t) { return e === r[t] }) } function u(e, t, n) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\uddfa\ud83c\uddf3", "\ud83c\uddfa\u200b\ud83c\uddf3") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !n(e, "\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff", "\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff") }return !1 } function f(e, t, n) { var r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : i.createElement("canvas"), a = r.getContext("2d", { willReadFrequently: !0 }), o = (a.textBaseline = "top", a.font = "600 32px Arial", {}); return e.forEach(function (e) { o[e] = t(a, e, n) }), o } function t(e) { var t = i.createElement("script"); t.src = e, t.defer = !0, i.head.appendChild(t) } "undefined" != typeof Promise && (o = "wpEmojiSettingsSupports", s = ["flag", "emoji"], n.supports = { everything: !0, everythingExceptFlag: !0 }, e = new Promise(function (e) { i.addEventListener("DOMContentLoaded", e, { once: !0 }) }), new Promise(function (t) { var n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), p.toString()].join(",") + "));", r = new Blob([e], { type: "text/javascript" }), a = new Worker(URL.createObjectURL(r), { name: "wpTestEmojiSupports" }); return void (a.onmessage = function (e) { c(n = e.data), a.terminate(), t(n) }) } catch (e) { } c(n = f(s, u, p)) } t(n) }).then(function (e) { for (var t in e) n.supports[t] = e[t], n.supports.everything = n.supports.everything && n.supports[t], "flag" !== t && (n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && n.supports[t]); n.supports.everythingExceptFlag = n.supports.everythingExceptFlag && !n.supports.flag, n.DOMReady = !1, n.readyCallback = function () { n.DOMReady = !0 } }).then(function () { return e }).then(function () { var e; n.supports.everything || (n.readyCallback(), (e = n.source || {}).concatemoji ? t(e.concatemoji) : e.wpemoji && e.twemoji && (t(e.twemoji), t(e.wpemoji))) })) }((window, document), window._wpemojiSettings);
   </script>
@@ -389,10 +389,10 @@
   <link rel="stylesheet" id="qode-zendesk-chat-css"
     href="https://newhome.qodeinteractive.com/wp-content/plugins/qode-zendesk-chat//assets/main.css?ver=6.3.1"
     type="text/css" media="all" />
-  <script type="text/javascript" src="https://newhome.qodeinteractive.com/wp-includes/js/jquery/jquery.min.js?ver=3.7.0"
+  <script type="text/javascript" src="../js/jquery.js"
     id="jquery-core-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1"
+    src="../js/jquery-migrate.js"
     id="jquery-migrate-js"></script>
   <script type="text/javascript" src="https://accounts.google.com/gsi/client?ver=6.3.1"
     id="newhome-membership-google-plus-api-js"></script>
@@ -1706,7 +1706,7 @@
                       <div class="widget widget_newhome_core_single_image">
                         <div class="qodef-shortcode qodef-m  qodef-single-image qodef-layout--default  qodef--retina "
                           data-viewport-offset="0.7">
-                          <div class="qodef-m-image"> <a itemprop="url" href="https://newhome.qodeinteractive.com/"
+                          <div class="qodef-m-image"> <a itemprop="url" href="../index"
                               target="_self"> <img decoding="async" loading="lazy" itemprop="image"
                                 src="https://newhome.qodeinteractive.com/wp-content/uploads/2023/03/logo-footer.png"
                                 width="142" height="51" alt /> </a> </div>
@@ -2649,10 +2649,10 @@
     #rs-demo-id {}
   </style>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/anti-spam/assets/js/anti-spam.js?ver=7.3.5"
+    src="../js/anti-spam.js"
     id="anti-spam-script-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/contact-form-7/includes/swv/js/index.js?ver=5.7.7"
+    src="../js/swv.js"
     id="swv-js"></script>
   <script type="text/javascript" id="contact-form-7-js-extra">
     /* <![CDATA[ */
@@ -2660,7 +2660,7 @@
     /* ]]> */
   </script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.7.7"
+    src="../js/contact-form-7.js"
     id="contact-form-7-js"></script>
   <script type="text/javascript" id="qi-blocks-main-js-extra">
     /* <![CDATA[ */
@@ -2668,18 +2668,18 @@
     /* ]]> */
   </script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/qi-blocks/assets/dist/main.js?ver=6.3.1"
+    src="../js/qi-blocks.js"
     id="qi-blocks-main-js"></script>
-  <script type="text/javascript" src="https://export.qodethemes.com/_toolbar/assets/js/rbt-modules.js?ver=6.3.1"
+  <script type="text/javascript" src="../js/rabbit.js"
     id="rabbit_js-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.12"
+    src="../js/rbtools.js"
     defer async id="tp-tools-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.12" defer
+    src="../js/revmin.js" defer
     async id="revmin-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.7.0-wc.7.7.0"
+    src="../js/jquery-blockui.js"
     id="jquery-blockui-js"></script>
   <script type="text/javascript" id="wc-add-to-cart-js-extra">
     /* <![CDATA[ */
@@ -2687,10 +2687,10 @@
     /* ]]> */
   </script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=7.7.0"
+    src="../js/add-to-cart.js"
     id="wc-add-to-cart-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4-wc.7.7.0"
+    src="../js/js-cookie.js"
     id="js-cookie-js"></script>
   <script type="text/javascript" id="woocommerce-js-extra">
     /* <![CDATA[ */
@@ -2698,7 +2698,7 @@
     /* ]]> */
   </script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=7.7.0"
+    src="../js/woocommerce.js"
     id="woocommerce-js"></script>
   <script type="text/javascript" id="wc-cart-fragments-js-extra">
     /* <![CDATA[ */
@@ -2706,10 +2706,10 @@
     /* ]]> */
   </script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=7.7.0"
+    src="../js/cart-fragment.js"
     id="wc-cart-fragments-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-includes/js/jquery/ui/core.min.js?ver=1.13.2"
+    src="../js/core.js"
     id="jquery-ui-core-js"></script>
   <script type="text/javascript" id="qi-addons-for-elementor-script-js-extra">
     /* <![CDATA[ */
@@ -2717,18 +2717,18 @@
     /* ]]> */
   </script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/qi-addons-for-elementor/assets/js/main.min.js?ver=6.3.1"
+    src="../js/qi-addons.js"
     id="qi-addons-for-elementor-script-js"></script>
-  <script type="text/javascript" src="https://newhome.qodeinteractive.com/wp-includes/js/hoverIntent.min.js?ver=1.10.2"
+  <script type="text/javascript" src="../js/hover-intent.js"
     id="hoverIntent-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/newhome-core/assets/plugins/modernizr/modernizr.js?ver=6.3.1"
+    src="../js/modernizr.js"
     id="modernizr-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/newhome-core/assets/plugins/gsap/gsap.min.js?ver=6.3.1"
+    src="../js/gsap.js"
     id="gsap-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/qi-addons-for-elementor/inc/shortcodes/parallax-images/assets/js/plugins/jquery.parallax-scroll.js?ver=1"
+    src="../js/parallax-scroll.js"
     id="parallax-scroll-js"></script>
   <script type="text/javascript" id="newhome-main-js-js-extra">
     /* <![CDATA[ */
@@ -2736,15 +2736,15 @@
     /* ]]> */
   </script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/themes/newhome/assets/js/main.min.js?ver=6.3.1"
+    src="../js/main.js"
     id="newhome-main-js-js"></script>
-  <script type="text/javascript" src="https://newhome.qodeinteractive.com/wp-includes/js/underscore.min.js?ver=1.13.4"
+  <script type="text/javascript" src="../js/underscore.js"
     id="underscore-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/newhome-core/inc/maps/assets/js/custom-marker.js?ver=6.3.1"
+    src="../js/custom-marker.js"
     id="newhome-core-map-custom-marker-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/newhome-core/inc/maps/assets/js/markerclusterer.js?ver=6.3.1"
+    src="../js/marker-clusterer.js"
     id="markerclusterer-js"></script>
   <script type="text/javascript" id="newhome-core-google-map-js-extra">
     /* <![CDATA[ */
@@ -2752,13 +2752,13 @@
     /* ]]> */
   </script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/newhome-core/inc/maps/assets/js/google-map.js?ver=6.3.1"
+    src="../js/google-map.js"
     id="newhome-core-google-map-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/newhome-core/assets/js/newhome-core.min.js?ver=6.3.1"
+    src="../js/core-script.js"
     id="newhome-core-script-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-includes/js/jquery/ui/tabs.min.js?ver=1.13.2"
+    src="../js/tabs.js"
     id="jquery-ui-tabs-js"></script>
   <script type="text/javascript" id="newhome-membership-script-js-extra">
     /* <![CDATA[ */
@@ -2766,27 +2766,25 @@
     /* ]]> */
   </script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/newhome-membership/assets/js/newhome-membership.min.js?ver=6.3.1"
+    src="../js/membership.js"
     id="newhome-membership-script-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/qi-blocks/inc/masonry/assets/plugins/isotope.pkgd.min.js?ver=6.3.1"
+    src="../js/isotope.js"
     id="isotope-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/qi-blocks/inc/masonry/assets/plugins/packery-mode.pkgd.min.js?ver=6.3.1"
+    src="../js/packery.js"
     id="packery-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/newhome-core/assets/plugins/magnific-popup/jquery.magnific-popup.min.js?ver=6.3.1"
+    src="../js/magnific.js"
     id="jquery-magnific-popup-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/qi-blocks/inc/slider/assets/plugins/5.4.5/swiper.min.js?ver=6.3.1"
+    src="../js/swiper.js"
     id="swiper-js"></script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/qode-framework/inc/common/assets/plugins/select2/select2.full.min.js?ver=1"
+    src="../js/select2.js"
     id="select2-js"></script>
-  <script type="text/javascript" src="https://newhome.qodeinteractive.com/wp-includes/js/comment-reply.min.js?ver=6.3.1"
-    id="comment-reply-js"></script>
   <script type="text/javascript"
-    src="https://static.zdassets.com/ekr/snippet.js?key=af3078fd-a5ae-40da-bee0-e589b98c8603&#038;ver=6.3.1"
+    src="../js/snippet.js"
     id="ze-snippet"></script>
   <script type="text/javascript">
     zE(function () {
@@ -2807,7 +2805,7 @@
     });
   </script>
   <script type="text/javascript"
-    src="https://newhome.qodeinteractive.com/wp-content/plugins/newhome-core/assets/plugins/nouislider/nouislider.min.js?ver=6.3.1"
+    src="../js/nouislider.js"
     id="nouislider-js"></script>
 </body>
 
