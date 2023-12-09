@@ -978,6 +978,15 @@
                             const towerId = document.getElementById("towerId");
                             const links = document.getElementsByClassName("tower-link");
                             let restId;
+                            setTimeout(() => {
+                              for (let link = 1; link < links.length; link++) {
+                                restId = document.getElementById(`tower${link}`);
+                                if (restId) {
+                                  restId.style.display = "none";
+                                }
+                              }
+                            }, 500);
+                            
                             const clickTower = (num) => {
                               for (let link = 0; link < links.length; link++) {
                                 restId = document.getElementById(`tower${link}`);
@@ -1105,7 +1114,7 @@
                           <div class="qodef-m-floor-plans-content" style="margin-top: 10px;" id="tower1">
                             <div class="qodef-m-floor-plans-links" style="position: inherit; overflow-x: auto;
                             white-space: nowrap;">
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="13">
                                 <span class="qodef-e-text">Flat A <br /> 4th & 5th</span>
                               </a>
@@ -1113,7 +1122,7 @@
                                 rel="noopener noreferrer" data-trigger="14">
                                 <span class="qodef-e-text">Flat A <br /> 6th - 22nd</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="15">
                                 <span class="qodef-e-text">Flat A <br /> 23rd</span>
                               </a>
@@ -1121,7 +1130,7 @@
                                 rel="noopener noreferrer" data-trigger="16">
                                 <span class="qodef-e-text">Flat A <br /> 24th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="17">
                                 <span class="qodef-e-text">Flat B <br /> 1st & 2nd</span>
                               </a>
@@ -1129,7 +1138,7 @@
                                 rel="noopener noreferrer" data-trigger="18">
                                 <span class="qodef-e-text">Flat B <br /> 3rd</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="19">
                                 <span class="qodef-e-text">Flat B <br /> 4th & 5th</span>
                               </a>
@@ -1137,7 +1146,7 @@
                                 rel="noopener noreferrer" data-trigger="20">
                                 <span class="qodef-e-text">Flat B <br /> 6th - 22nd</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="21">
                                 <span class="qodef-e-text">Flat B <br /> 23rd</span>
                               </a>
@@ -1145,7 +1154,7 @@
                                 rel="noopener noreferrer" data-trigger="22">
                                 <span class="qodef-e-text">Flat B <br /> 24th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="23">
                                 <span class="qodef-e-text">Flat C <br /> 1st & 2nd</span>
                               </a>
@@ -1153,7 +1162,7 @@
                                 rel="noopener noreferrer" data-trigger="24">
                                 <span class="qodef-e-text">Flat C <br /> 3rd</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="25">
                                 <span class="qodef-e-text">Flat C <br /> 4th & 5th</span>
                               </a>
@@ -1224,7 +1233,7 @@
                           <div class="qodef-m-floor-plans-content" style="margin-top: 10px;" id="tower2">
                             <div class="qodef-m-floor-plans-links" style="position: inherit; overflow-x: auto;
                             white-space: nowrap;">
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="27">
                                 <span class="qodef-e-text">Flat A <br /> 2nd</span>
                               </a>
@@ -1232,7 +1241,7 @@
                                 rel="noopener noreferrer" data-trigger="28">
                                 <span class="qodef-e-text">Flat A <br /> 3rd</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="29">
                                 <span class="qodef-e-text">Flat A <br /> 4th</span>
                               </a>
@@ -1240,7 +1249,7 @@
                                 rel="noopener noreferrer" data-trigger="30">
                                 <span class="qodef-e-text">Flat A <br /> 5th - 13th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="31">
                                 <span class="qodef-e-text">Flat A <br /> 14th & 15th</span>
                               </a>
@@ -1248,7 +1257,7 @@
                                 rel="noopener noreferrer" data-trigger="32">
                                 <span class="qodef-e-text">Flat A <br /> 17th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="33">
                                 <span class="qodef-e-text">Flat A <br /> 18th & 19th</span>
                               </a>
@@ -1256,7 +1265,7 @@
                                 rel="noopener noreferrer" data-trigger="34">
                                 <span class="qodef-e-text">Flat B <br /> 4th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="35">
                                 <span class="qodef-e-text">Flat B <br /> 5th - 13th</span>
                               </a>
@@ -1264,7 +1273,7 @@
                                 rel="noopener noreferrer" data-trigger="36">
                                 <span class="qodef-e-text">Flat B <br /> 14th & 15th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="37">
                                 <span class="qodef-e-text">Flat B <br /> 17th</span>
                               </a>
@@ -1272,7 +1281,7 @@
                                 rel="noopener noreferrer" data-trigger="38">
                                 <span class="qodef-e-text">Flat B <br /> 18th & 19th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="39">
                                 <span class="qodef-e-text">Flat C <br /> 4th</span>
                               </a>
@@ -1351,7 +1360,7 @@
                           <div class="qodef-m-floor-plans-content" style="margin-top: 10px;" id="tower3">
                             <div class="qodef-m-floor-plans-links" style="position: inherit; overflow-x: auto;
                             white-space: nowrap;">
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="42">
                                 <span class="qodef-e-text">Flat A <br /> 4th</span>
                               </a>
@@ -1359,7 +1368,7 @@
                                 rel="noopener noreferrer" data-trigger="43">
                                 <span class="qodef-e-text">Flat A <br /> 5th - 10th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="44">
                                 <span class="qodef-e-text">Flat A <br /> 11th & 12th</span>
                               </a>
@@ -1367,7 +1376,7 @@
                                 rel="noopener noreferrer" data-trigger="45">
                                 <span class="qodef-e-text">Flat A <br /> 13th - 14th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="46">
                                 <span class="qodef-e-text">Flat A <br />15th</span>
                               </a>
@@ -1375,7 +1384,7 @@
                                 rel="noopener noreferrer" data-trigger="47">
                                 <span class="qodef-e-text">Flat B <br /> 4th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="48">
                                 <span class="qodef-e-text">Flat B <br /> 5th - 10th</span>
                               </a>
@@ -1383,7 +1392,7 @@
                                 rel="noopener noreferrer" data-trigger="49">
                                 <span class="qodef-e-text">Flat B <br /> 11th & 12th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="50">
                                 <span class="qodef-e-text">Flat B <br /> 13th & 14th</span>
                               </a>
@@ -1391,7 +1400,7 @@
                                 rel="noopener noreferrer" data-trigger="51">
                                 <span class="qodef-e-text">Flat B <br /> 15th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="52">
                                 <span class="qodef-e-text">Flat C <br /> 5th - 10th</span>
                               </a>
@@ -1399,14 +1408,14 @@
                                 rel="noopener noreferrer" data-trigger="53">
                                 <span class="qodef-e-text">Flat C <br /> 11th & 12th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="54">
                                 <span class="qodef-e-text">Flat C <br /> 13th & 14th</span>
                               </a>
                             </div>
                             <div class="qodef-m-floor-plans-images">
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/a-4.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="42" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="42" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower4/a-4.webp 913w, ../images/home/projects/town-square/plan/tower4/a-4.webp 300w, ../images/home/projects/town-square/plan/tower4/a-4.webp 768w, ../images/home/projects/town-square/plan/tower4/a-4.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/a-5-10.webp"
@@ -1414,7 +1423,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower4/a-5-10.webp 913w, ../images/home/projects/town-square/plan/tower4/a-5-10.webp 300w, ../images/home/projects/town-square/plan/tower4/a-5-10.webp 768w, ../images/home/projects/town-square/plan/tower4/a-5-10.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/a-11-12.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="44" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="44" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower4/a-11-12.webp 913w, ../images/home/projects/town-square/plan/tower4/a-11-12.webp 300w, ../images/home/projects/town-square/plan/tower4/a-11-12.webp 768w, ../images/home/projects/town-square/plan/tower4/a-11-12.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/a-13-14.webp"
@@ -1422,7 +1431,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower4/a-13-14.webp 913w, ../images/home/projects/town-square/plan/tower4/a-13-14.webp 300w, ../images/home/projects/town-square/plan/tower4/a-13-14.webp 768w, ../images/home/projects/town-square/plan/tower4/a-13-14.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/a-15.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="46" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="46" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower4/a-15.webp 913w, ../images/home/projects/town-square/plan/tower4/a-15.webp 300w, ../images/home/projects/town-square/plan/tower4/a-15.webp 768w, ../images/home/projects/town-square/plan/tower4/a-15.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/b-4.webp"
@@ -1430,7 +1439,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower4/b-4.webp 913w, ../images/home/projects/town-square/plan/tower4/b-4.webp 300w, ../images/home/projects/town-square/plan/tower4/b-4.webp 768w, ../images/home/projects/town-square/plan/tower4/b-4.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/b-5-10.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="48" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="48" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower4/b-5-10.webp 913w, ../images/home/projects/town-square/plan/tower4/b-5-10.webp 300w, ../images/home/projects/town-square/plan/tower4/b-5-10.webp 768w, ../images/home/projects/town-square/plan/tower4/b-5-10.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/b-11-12.webp"
@@ -1438,7 +1447,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower4/b-11-12.webp 913w, ../images/home/projects/town-square/plan/tower4/b-11-12.webp 300w, ../images/home/projects/town-square/plan/tower4/b-11-12.webp 768w, ../images/home/projects/town-square/plan/tower4/b-11-12.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/b-13-14.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="50" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="50" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower4/b-13-14.webp 913w, ../images/home/projects/town-square/plan/tower4/b-13-14.webp 300w, ../images/home/projects/town-square/plan/tower4/b-13-14.webp 768w, ../images/home/projects/town-square/plan/tower4/b-13-14.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/b-15.webp"
@@ -1446,7 +1455,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower4/b-15.webp 913w, ../images/home/projects/town-square/plan/tower4/b-15.webp 300w, ../images/home/projects/town-square/plan/tower4/b-15.webp 768w, ../images/home/projects/town-square/plan/tower4/b-15.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/c-5-10.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="52" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="52" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower4/c-5-10.webp 913w, ../images/home/projects/town-square/plan/tower4/c-5-10.webp 300w, ../images/home/projects/town-square/plan/tower4/c-5-10.webp 768w, ../images/home/projects/town-square/plan/tower4/c-5-10.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/c-11-12.webp"
@@ -1454,7 +1463,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower4/c-11-12.webp 913w, ../images/home/projects/town-square/plan/tower4/c-11-12.webp 300w, ../images/home/projects/town-square/plan/tower4/c-11-12.webp 768w, ../images/home/projects/town-square/plan/tower4/c-11-12.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower4/c-13-14.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="54" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="54" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower4/c-13-14.webp 913w, ../images/home/projects/town-square/plan/tower4/c-13-14.webp 300w, ../images/home/projects/town-square/plan/tower4/c-13-14.webp 768w, ../images/home/projects/town-square/plan/tower4/c-13-14.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                             </div>
@@ -1462,7 +1471,7 @@
                           <div class="qodef-m-floor-plans-content" style="margin-top: 10px;" id="tower4">
                             <div class="qodef-m-floor-plans-links" style="position: inherit; overflow-x: auto;
                             white-space: nowrap;">
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="55">
                                 <span class="qodef-e-text">Flat A <br /> 4th</span>
                               </a>
@@ -1470,7 +1479,7 @@
                                 rel="noopener noreferrer" data-trigger="56">
                                 <span class="qodef-e-text">Flat A <br /> 5th - 13th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="57">
                                 <span class="qodef-e-text">Flat A <br /> 14th - 16th</span>
                               </a>
@@ -1478,7 +1487,7 @@
                                 rel="noopener noreferrer" data-trigger="58">
                                 <span class="qodef-e-text">Flat A <br /> 17th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="59">
                                 <span class="qodef-e-text">Flat A <br />18th & 19th</span>
                               </a>
@@ -1486,7 +1495,7 @@
                                 rel="noopener noreferrer" data-trigger="60">
                                 <span class="qodef-e-text">Flat B <br /> 2nd</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="61">
                                 <span class="qodef-e-text">Flat B <br /> 3rd</span>
                               </a>
@@ -1494,7 +1503,7 @@
                                 rel="noopener noreferrer" data-trigger="62">
                                 <span class="qodef-e-text">Flat B <br /> 4th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="63">
                                 <span class="qodef-e-text">Flat B <br /> 5th - 13th</span>
                               </a>
@@ -1502,7 +1511,7 @@
                                 rel="noopener noreferrer" data-trigger="64">
                                 <span class="qodef-e-text">Flat B <br /> 14th - 16th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="65">
                                 <span class="qodef-e-text">Flat B <br /> 17th</span>
                               </a>
@@ -1510,22 +1519,22 @@
                                 rel="noopener noreferrer" data-trigger="66">
                                 <span class="qodef-e-text">Flat B <br /> 18th & 19th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="67">
                                 <span class="qodef-e-text">Flat C <br /> 4th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="68">
                                 <span class="qodef-e-text">Flat C <br /> 5th  - 13th</span>
                               </a>
-                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e qodef--active"
+                              <a style="text-align: center;" class="qodef-m-floor-plans-link qodef-e"
                                 href="#" rel="noopener noreferrer" data-trigger="69">
                                 <span class="qodef-e-text">Flat C <br /> 14th - 16th</span>
                               </a>
                             </div>
                             <div class="qodef-m-floor-plans-images">
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/a-4.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="55" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="55" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower5/a-4.webp 913w, ../images/home/projects/town-square/plan/tower5/a-4.webp 300w, ../images/home/projects/town-square/plan/tower5/a-4.webp 768w, ../images/home/projects/town-square/plan/tower5/a-4.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/a-5-13.webp"
@@ -1533,7 +1542,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower5/a-5-13.webp 913w, ../images/home/projects/town-square/plan/tower5/a-5-13.webp 300w, ../images/home/projects/town-square/plan/tower5/a-5-13.webp 768w, ../images/home/projects/town-square/plan/tower5/a-5-13.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/a-14-16.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="57" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="57" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower5/a-14-16.webp 913w, ../images/home/projects/town-square/plan/tower5/a-14-16.webp 300w, ../images/home/projects/town-square/plan/tower5/a-14-16.webp 768w, ../images/home/projects/town-square/plan/tower5/a-14-16.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/a-17.webp"
@@ -1541,7 +1550,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower5/a-17.webp 913w, ../images/home/projects/town-square/plan/tower5/a-17.webp 300w, ../images/home/projects/town-square/plan/tower5/a-17.webp 768w, ../images/home/projects/town-square/plan/tower5/a-17.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/a-18-19.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="59" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="59" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower5/a-18-19.webp 913w, ../images/home/projects/town-square/plan/tower5/a-18-19.webp 300w, ../images/home/projects/town-square/plan/tower5/a-18-19.webp 768w, ../images/home/projects/town-square/plan/tower5/a-18-19.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/b-2.webp"
@@ -1549,7 +1558,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower5/b-2.webp 913w, ../images/home/projects/town-square/plan/tower5/b-2.webp 300w, ../images/home/projects/town-square/plan/tower5/b-2.webp 768w, ../images/home/projects/town-square/plan/tower5/b-2.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/b-3.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="61" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="61" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower5/b-3.webp 913w, ../images/home/projects/town-square/plan/tower5/b-3.webp 300w, ../images/home/projects/town-square/plan/tower5/b-3.webp 768w, ../images/home/projects/town-square/plan/tower5/b-3.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/b-4.webp"
@@ -1557,7 +1566,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower5/b-4.webp 913w, ../images/home/projects/town-square/plan/tower5/b-4.webp 300w, ../images/home/projects/town-square/plan/tower5/b-4.webp 768w, ../images/home/projects/town-square/plan/tower5/b-4.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/b-5-13.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="63" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="63" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower5/b-5-13.webp 913w, ../images/home/projects/town-square/plan/tower5/b-5-13.webp 300w, ../images/home/projects/town-square/plan/tower5/b-5-13.webp 768w, ../images/home/projects/town-square/plan/tower5/b-5-13.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/b-14-16.webp"
@@ -1565,7 +1574,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower5/b-14-16.webp 913w, ../images/home/projects/town-square/plan/tower5/b-14-16.webp 300w, ../images/home/projects/town-square/plan/tower5/b-14-16.webp 768w, ../images/home/projects/town-square/plan/tower5/b-14-16.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/b-17.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="65" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="65" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower5/b-17.webp 913w, ../images/home/projects/town-square/plan/tower5/b-17.webp 300w, ../images/home/projects/town-square/plan/tower5/b-17.webp 768w, ../images/home/projects/town-square/plan/tower5/b-17.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/b-18-19.webp"
@@ -1573,7 +1582,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower5/b-18-19.webp 913w, ../images/home/projects/town-square/plan/tower5/b-18-19.webp 300w, ../images/home/projects/town-square/plan/tower5/b-18-19.webp 768w, ../images/home/projects/town-square/plan/tower5/b-18-19.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/c-4.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="67" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="67" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower5/c-4.webp 913w, ../images/home/projects/town-square/plan/tower5/c-4.webp 300w, ../images/home/projects/town-square/plan/tower5/c-4.webp 768w, ../images/home/projects/town-square/plan/tower5/c-4.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                               <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/c-5-13.webp"
@@ -1581,7 +1590,7 @@
                                 srcset="../images/home/projects/town-square/plan/tower5/c-5-13.webp 913w, ../images/home/projects/town-square/plan/tower5/c-5-13.webp 300w, ../images/home/projects/town-square/plan/tower5/c-5-13.webp 768w, ../images/home/projects/town-square/plan/tower5/c-5-13.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                                 <img width="913" height="545" src="../images/home/projects/town-square/plan/tower5/c-14-16.webp"
-                                class="qodef--active" alt="w" decoding="async" data-target="69" loading="lazy"
+                                class="" alt="w" decoding="async" data-target="69" loading="lazy"
                                 srcset="../images/home/projects/town-square/plan/tower5/c-14-16.webp 913w, ../images/home/projects/town-square/plan/tower5/c-14-16.webp 300w, ../images/home/projects/town-square/plan/tower5/c-14-16.webp 768w, ../images/home/projects/town-square/plan/tower5/c-14-16.webp 600w"
                                 sizes="(max-width: 913px) 100vw, 913px" />
                             </div>
