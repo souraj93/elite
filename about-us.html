@@ -1,8 +1,176 @@
 <html>
-    <head>
-        <title>About Us - Elite</title>
-    </head>
-    <body>
-        <h1>Coming soon...</h1>
-    </body>
+
+<head>
+    <title>About Us - Elite</title>
+
+
+    <style>
+        .aboutus {
+            display: flex;
+            gap: 0px;
+        }
+
+        .aboutus1 {
+            display: flex;
+            gap: 0px;
+        }
+
+        .img {
+            width: 50vw;
+        }
+
+        .para>p {
+            font-size: x-large
+        }
+
+        .para {
+            padding: 10px;
+            background-color: rgb(231, 231, 177)
+        }
+
+        @media screen and (max-width: 600px) {
+            .aboutus {
+                display: flex;
+                flex-direction: column-reverse;
+
+
+            }
+
+            .aboutus1 {
+                display: flex;
+                flex-direction: column;
+
+
+            }
+
+            .img {
+                width: 100vw;
+            }
+        }
+    </style>
+
+    <style>
+        .spn {
+            background-color: #fb8053;
+            color: azure;
+            border: none;
+            height: 30px;
+            right: 0px;
+
+        }
+
+        .banner {
+            height: 8px;
+            position: relative;
+            background-color: rgb(231, 231, 194);
+        }
+
+        .bck {
+            width: 40px;
+            border: none;
+
+        }
+        .back >button {
+            border: none;
+        }
+
+        .logo >img {
+            width: 150px;
+        }
+
+        .head {
+
+            display: flex;
+            justify-content:space-between;
+          align-items: center;
+        }
+
+        .whatsapp {
+
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 9999;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div class="head">
+            <div class="back">
+
+                <button onclick="history.back()">
+                    <img class="bck" src="./images/arrow-back-3783.svg" alt="Back">
+                </button>
+            </div>
+            <div class="logo">
+                <img src="./images/logo.png" alt="">
+            </div>
+            <div class="enquiry">
+                <button class="spn" type="button" onclick="window.open('https://forms.gle/ezDUZoqmJJBUk8rd6')"><span
+                    class="qodef-m-text">Make an enquiry</span></button>
+            </div>
+            <div class="whatsapp">
+                <a href="https://wa.me/+918240592073" target="_blank"><img src="./images/whatsapp.svg" alt="WhatsApp Button"></a>
+            </div>
+            
+        </div>
+
+    </header>
+
+    <div class="banner">
+
+    </div>
+
+    <div class="sec">
+        <div class="aboutus">
+            <div class="para">
+
+
+                <h2>About Us</h2>
+                <p>Welcome to Elite properties, your trusted partner in property investment opportunities in two vibrant
+                    cities
+                    - Dubai and Kolkata. We are experts at guiding investors through these vibrant metropolises'
+                    challenging
+                    real estate markets, while providing outstanding value and outstanding support. At Elite Properties,
+                    integrity, transparency, and client satisfaction are at the core of everything we do. Delivering
+                    customized
+                    solutions that increase returns and reduce risks for our esteemed investors has been inspired by our
+                    constant commitment to excellence.</p>
+            </div>
+            <div class="img"><img class="img" src="./images/about-us/key.jpg" alt=""></div>
+
+        </div>
+        <div class="aboutus1">
+
+            <div class="img"><img class="img" src="./images/about-us/key2.jpg" alt=""></div>
+
+            <div class="para">
+
+
+                <h2>Vision</h2>
+                <p>Our vision is to transform dreams into well-considered real estate investments in Kolkata and Dubai,
+                    two
+                    thriving cities. Giving investors the opportunity to take part in the dynamic growth of one of the
+                    world's
+                    most inventive and diverse cities is our primary goal in Dubai. Our vision is to fully realize the
+                    potential
+                    of the Dubai real estate market by offering a diverse selection of properties that appeal to both
+                    luxury
+                    seekers and shrewd investors. In a similar vein, our objective in Kolkata is to provide investors
+                    with
+                    first-rate commercial, industrial, and residential </p>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
 </html>
